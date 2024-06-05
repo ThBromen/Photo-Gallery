@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    transition: opacity 0.3s ease;
+}
+
+img[alt] {
+    opacity: 1;
+}
+
+@media (max-width: 1200px) {
+    img {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    img {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    img {
+        max-width: 100%;
+    }
+}
